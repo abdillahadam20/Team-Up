@@ -36,27 +36,27 @@ let tinggiBadan = 169;
 let born = "20 Juni 1995";
 let drinkOneDay = 1000;
 
-let BMI = beratKg / tinggiBadan**2;
+let BMI = beratKg / (tinggiBadan/100)**2;
 
 function kondisiIdeal() {
     if(BMI < 18.5) {
-        console.log('Below Normal Weight')
+        console.log('Below Normal Weight');
     } else if(BMI < 25 ) {
-        console.log('Normal Weight')
+        console.log('Normal Weight');
     } else if(BMI < 30) {
-        console.log('Overweight')
+        console.log('Overweight');
     } else if(BMI < 35) {
-        console.log('Obesity I')
+        console.log('Obesity I');
     }  else if(BMI < 40) {
-        console.log('Obesity II')
+        console.log('Obesity II');
     } else if(BMI < 40) {
-        console.log('Obesity III')
+        console.log('Obesity III');
     } else {
-        console.log('Check to your doctor')
+        console.log('Check to your doctor');
     }
-
-    return kondisiIdeal();
 }
+
+kondisiIdeal();
 
 console.log(
     `Halo, nama saya ${fullName} berat saya adalah ${beratKg}kg, tinggi saya ${tinggiBadan}cm. Saya lahir pada tanggal
